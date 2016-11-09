@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+      <title>Tern-Based Combat</title>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <link rel="stylesheet" type="text/css" href="shake.css" />
+      <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative:700|Open+Sans' rel='stylesheet' type='text/css'>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    </head>
+
+    <body>
+      <div class="overlay">
+        <div class="overlay-inner">
+          <div class="message">
+            <button id="startbutton">press to play</button>
+          </div>
+        </div>
+      </div>
+
+      <header>
+
+        <h1>Tern-Based Combat</h1>
+
+        <div id="nav">
+
+            <ul>
+              <li><a href="pages/stats.html">Your Stats</a></li>
+              <li><a href="pages/about.html">About Team Tern-Style</a></li>
+            </ul>
+
+        </div>
+
+      </header>
+
+      <main class="gamepage-main">
+        <div id="flavorcontainer">
+          <div id="flavor">
+            <!-- <img id="crest" src="" /> -->
+            <p id="story">Test Text</p>
+            <!-- <button id="startbutton"></button> -->
+            <button id="begingame">Begin The Game</button>
+          </div>
+        </div>
+
+        <div id="combat">
+
+          <div id="hero">
+            <img src="" id="heroimg" />
+            <div class="combatantcontainer">
+              <p id="heroname" class="combatantdisplay"></p>
+              <div class="combatantdisplay">
+                <p id="herohp" class="combatantdisplay"></p>
+              </div>
+              <div id="herobuttons" class="combatantdisplay">
+                <ul id="herobuttonsgame" class="atkhealbuttons">
+                  <li class="atkhealbuttons"><button id="heroatk">ATTACK</button></li>
+                  <li class="atkhealbuttons"><button id="heroheal">HEAL</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="hitmisscontainer">
+            <div>
+              <p id="testtext" class="hitmiss">hit</p>
+              <p id="testtext2" class="hitmiss">miss</p>
+            </div>
+          </div>
+
+          <div id="enemy">
+            <img src="" id="enemyimg" />
+            <div class="combatantcontainer">
+              <p id="testtext3" class="combatantdisplay"></p>
+              <div class="combatantdisplay">
+                <p id="enemyhp" class="combatantdisplay"></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+
+      <footer>
+
+        <p id="footertext">Developed by Team Tern-Style &#8482 All Rights Reserved</p>
+
+      </footer>
+      
+      <div class="endoverlay">
+           <div class="endoverlay-inner">
+               <div class="message">
+                   <a href="pages/stats.html">Your Stats</a>
+               </div>
+           </div>
+       </div>
+
+      <script src="JS/app.js" type="text/javascript"></script>
+    </body>
+
+</html>

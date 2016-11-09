@@ -1,0 +1,373 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0px auto;
+  min-width: 400px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1C3659;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  margin-left: 20px;
+}
+
+main {
+}
+
+footer {
+  margin: 0px auto;
+  font-size: 80%;
+  padding: 20px;
+  color: #DB9E67;
+}
+
+h1 {
+  margin: 0px auto;
+  align-self: flex-end;
+  font-family: 'Cinzel Decorative', cursive;
+  color: #DB9E67;
+  font-size: 350%;
+  margin: 20px 0px 0px 0px;
+}
+
+h2 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 200%;
+}
+
+h3 {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+canvas {
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin: 0px 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+li a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #DB9E67;
+  text-decoration: underline;
+}
+
+li a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#nav {
+  align-self: flex-end;
+  font-size: 80%;
+  width: 200px;
+}
+
+#begingame {
+  margin: 0px auto;
+}
+
+#flavortext {
+
+}
+
+#flavorcontainer  {
+  margin: 0px auto;
+  width: 100%;
+  background-image: url('images/scroll3.png');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 190px;
+  background-size: 100% 190px;
+  border-color: orange;
+}
+
+#flavor {
+  padding-top: 30px;
+  margin: 0px auto;
+  width: 80%;
+  color: #333333;
+  font-size: 110%;
+  font-weight: bold;
+  border-color: red;
+}
+
+#combat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px;
+  background-image: url('images/stormy_beach_2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  border: 2px black solid;
+  border-radius: 4px;
+}
+
+#hero {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  padding-bottom: 30px;
+}
+
+#heroimg {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+  border-radius: 4px;
+}
+
+#enemy {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+#enemyimg {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+  border-radius: 4px;
+}
+
+#herostats {
+  display: flex;
+  flex-direction: row;
+}
+
+#heroname {
+  font-weight: bolder;
+}
+
+.atkhealbuttons {
+  display: inline;
+}
+
+.gamepage-main {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  padding-bottom: 40px
+}
+
+.mainpages {
+  background-color: #244673;
+  padding: 30px;
+}
+
+.subhead {
+
+}
+
+.herostatsimg {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+
+.enemyindex {
+}
+
+.enemycontainer {
+  width: 50%;
+  margin: 20px;
+}
+
+.enemybosscontainer {
+  width: 40%;
+  margin: 20px;
+}
+
+.enemyindeximg {
+  width: 160px;
+  border-radius: 4px;
+}
+
+.enemybossindeximg {
+  width: 240px;
+  border-radius: 4px;
+}
+
+.teamcontainer {
+  width: 50%;
+  margin: 20px;
+}
+
+.teammemberimg {
+  width: 200px;
+  border-radius: 4px;
+}
+
+.teamrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.enemyrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.combatantdisplay {
+  width: 200px;
+  align-self: center;
+  margin: 0px;
+  padding: 4px;
+}
+
+.combatantcontainer {
+  margin-top: 20px;
+  width: 200px;
+  align-self: center;
+  background: rgba(128, 136, 138, 0.9);
+  border-radius: 4px;
+}
+
+.hitmisscontainer {
+  align-self: center;
+  width: 80px;
+}
+
+.hitmiss {
+  padding: 2px 0px 2px 20px;
+  background: rgba(128, 136, 138, 0.9);
+  border-radius: 4px;
+}
+
+/* stabbing animations */
+
+.herostabby {
+  animation-duration: 0.2s;
+  animation-name: herostabbing;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+@keyframes herostabbing {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 10%;
+  }
+}
+
+.enemystabby {
+  animation-duration: 0.2s;
+  animation-name: enemystabbing;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+@keyframes enemystabbing {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: -10%;
+  }
+}
+
+.overlay {
+	opacity:0;
+	position:fixed;
+	top:-999em;
+	left:-999em;
+	width:100%;
+	height:100%;
+	display:table;
+	-webkit-animation: splash 100s forwards;
+  animation: splash 1000s forwards;
+}
+.overlay-inner {
+	display:table-cell;
+	vertical-align: middle;
+	text-align:center;
+  background:transparent url('images/tern_scroll.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: grey;
+}
+.message {
+	border:3px solid black;
+	border-radius:10px;
+	background:#994d00;
+	display:inline-block;
+	vertical-align:middle;
+	width:10%;
+	text-align:center;
+	padding:10px;
+}
+
+@keyframes splash {
+  0%   {opacity: 1;top:0;left:0}
+	20% {opacity:1;top:0;left:0}
+	60% {opacity:1;top:0;left:0}
+	99% {top:0;left:0}
+	100% {opacity:0;top:-999em;left:-999em}
+}
+
+.endoverlay {
+opacity:0;
+position:fixed;
+top:-999em;
+left:-999em;
+width:100%;
+height:100%;
+display:table;
+-webkit-animation: splash 100s forwards;
+ animation: splash 1000s forwards;
+}
+.endoverlay-inner {
+display:table-cell;
+vertical-align: middle;
+text-align:center;
+ background:transparent url('images/gameover.jpg');
+ background-repeat: no-repeat;
+ background-position: center;
+ background-color: grey;
+}
+.message {
+border:3px solid black;
+border-radius:10px;
+background:#994d00 ;
+display:inline-block;
+vertical-align:middle;
+width:10%;
+text-align:center;
+padding:10px;
+}
+
+@keyframes splash {
+ 0%   {opacity: 1;top:0;left:0}
+20% {opacity:1;top:0;left:0}
+60% {opacity:1;top:0;left:0}
+99% {top:0;left:0}
+100% {opacity:0;top:-999em;left:-999em}
+}
